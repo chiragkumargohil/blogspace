@@ -8,6 +8,9 @@
   },
   "author": "Chiragkumar Gohil",
   "license": "ISC",
+  "engines": {
+    "node": "18.5.0"
+  },
   "dependencies": {
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
