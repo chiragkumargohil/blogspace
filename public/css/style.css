@@ -1,0 +1,59 @@
+:root {
+    --c1: #EC4646;
+    --c2: #F6F6F6;
+}
+
+body {
+    font-family: 'Abyssinica SIL', serif;
+}
+
+.navbar {
+    background-color: var(--c2);
+    margin-bottom: 24px;
+}
+
+.navbar-nav li a:hover {
+    color: var(--c1) !important;
+}
+
+.username {
+    font-style: italic;
+    color: gray;
+}
+
+p span {
+    color: var(--c1);
+}
+
+.compose {
+    bottom: 24px;
+    right: 24px;
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--c1);
+    border-radius: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.7s;
+}
+
+.compose:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color: var(--c1);
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+}
+
+.btn:hover {
+    color: var(--c1);
+}

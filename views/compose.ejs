@@ -1,0 +1,21 @@
+<%- include('partials/header') -%>
+
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="mb-3">
+            <label for="postTitle" class="form-label">Title</label>
+            <input type="text" class="form-control" name="postTitle" id="postTitle" required>
+        </div>
+        <div class="mb-3">
+            <label for="postContent" class="form-label">Post</label>
+            <textarea name="postContent" id="postContent" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="postBy" class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="postBy" id="postBy" placeholder="Optional">
+        </div>
+        <p>Once you press publish, you cannot edit your post. Send an email (Contact) to change or remove your post.</p>
+        <button type="submit" class="btn">Publish</button>
+    </form>
+
+<%- include('partials/footer') -%>
