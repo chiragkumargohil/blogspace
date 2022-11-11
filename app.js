@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -9,7 +10,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 
-mongoose.connect('mongodb+srv://admin-cmgohil10:toUseWeb24@webapps.jh97p32.mongodb.net/postsDB');
+mongo_username = process.env.MONGO_USERNAME;
+mongo_password = process.env.MONGO_PASSWORD;
+
+mongoose.connect("mongodb+srv://" + mongo_username + ":" + mongo_password + "@webapps.jh97p32.mongodb.net/postsDB");
 
 const postsSchema = new mongoose.Schema({ title: 'string', content: 'string', postBy: 'string' });
 const Post = mongoose.model('Post', postsSchema);
