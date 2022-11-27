@@ -10,10 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 
-mongo_username = process.env.MONGO_USERNAME;
-mongo_password = process.env.MONGO_PASSWORD;
-
-mongoose.connect("mongodb+srv://" + mongo_username + ":" + mongo_password + "@webapps.jh97p32.mongodb.net/postsDB");
+mongoose.connect(process.env.MONGO_URL);
 
 const postsSchema = new mongoose.Schema({ title: 'string', content: 'string', postBy: 'string' });
 const Post = mongoose.model('Post', postsSchema);

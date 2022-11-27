@@ -16,12 +16,28 @@ body {
     color: var(--c1) !important;
 }
 
+.post-content {
+    white-space: pre-line;
+    text-align: justify;
+}
+
 .username {
     font-style: italic;
     color: gray;
 }
 
 p span {
+    color: var(--c1);
+}
+
+.navbar-brand {
+    color: var(--c1);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.read-more,
+.read-more:hover {
     color: var(--c1);
 }
 
@@ -47,13 +63,26 @@ p span {
     transform: scale(1.1);
 }
 
+#postContent {
+    height: 120px;
+}
+
 .btn {
     background-color: var(--c1);
     border-radius: 30px;
     border: none;
     color: #fff;
+    padding-block: 4px;
 }
 
 .btn:hover {
     color: var(--c1);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgba(93, 27, 27, .25);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(93, 27, 27, .25);
 }

@@ -3,11 +3,11 @@
     <% posts.forEach(function (element) { %>
         <h3><%= element.title %></h3>
         <% if (element.content.length>100) { %>
-            <p><%= element.content.substring(0, 100) + "..." %> <a href="/posts/<%= element._id %>">Read More</a></p>
+            <p><%= element.content.substring(0, 100) + "..." %> <a href="/posts/<%= element._id %>" class="read-more">Read More</a></p>
         <% } else { %>
             <p><%= element.content %></p>
         <% } %> 
-        <p class="username"> ~ <%= element.postBy %></p>
+        <p class="username"> ~ <%= element.postBy.length === 0 ? 'Anonymous' : element.postBy %></p>
     <% }); %>
     
 <%- include('partials/footer') -%>
