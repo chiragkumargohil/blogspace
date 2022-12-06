@@ -9,8 +9,9 @@ This blog website is developed using NodeJS, ExpressJS and EJS template.
 
 ## Link to the Website
 
-- https://blogspace-ahwy.onrender.com
-- Youtube Link
+🔗 https://blogspace-ahwy.onrender.com
+
+📽️ [Highlights - YouTube](https://youtu.be/uXGScL9sbio)
 
 ## Tech
 
@@ -31,6 +32,6 @@ This blog website is developed using NodeJS, ExpressJS and EJS template.
 	1. ```npm install```
 	2. ```npm run start```
 
-## Environment Variables
+### Environment Variables
 
 ```MONGO_URL```
